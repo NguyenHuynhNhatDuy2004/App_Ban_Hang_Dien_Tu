@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cấu hình đề xuất"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#172033"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BƯỚC 3 / 3"
+            android:textSize="13sp"
+            android:textColor="#625DE8"
+            android:layout_marginTop="8dp"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:max="3"
+            android:progress="3"
+            android:progressTint="#625DE8"
+            android:layout_marginTop="12dp"/>
+
+        <!-- AI BANNER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_build_banner">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✦ Cấu hình dành cho bạn"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="19sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dựa trên ngân sách và nhu cầu, chúng tôi đã chuẩn bị 3 cấu hình PC phù hợp."
+                android:textColor="#E1E3FF"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- PC 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_build_option">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PC TIẾT KIỆM"
+                android:textColor="#64748B"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PC Học tập &amp; Văn phòng"
+                android:textColor="#172033"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12.500.000 VNĐ"
+                android:textColor="#625DE8"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CPU: Intel Core i3-12100F"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GPU: GTX 1650 4GB"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RAM: 16GB DDR4"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SSD: 512GB"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <Button
+                android:id="@+id/btnDetailBudget"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Xem chi tiết cấu hình"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#625DE8"
+                android:layout_marginTop="18dp"/>
+        </LinearLayout>
+
+        <!-- PC 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_build_option">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="★ CẤU HÌNH ĐỀ XUẤT"
+                android:textColor="#625DE8"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PC Gaming Cân bằng"
+                android:textColor="#172033"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20.500.000 VNĐ"
+                android:textColor="#625DE8"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CPU: Intel Core i5-12400F"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GPU: RTX 4060 8GB"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RAM: 16GB DDR4"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SSD: NVMe 1TB"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <Button
+                android:id="@+id/btnDetailBalanced"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Xem chi tiết cấu hình"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#625DE8"
+                android:layout_marginTop="18dp"/>
+        </LinearLayout>
+
+        <!-- PC 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_build_option">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚡ HIỆU NĂNG CAO"
+                android:textColor="#C0842D"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PC Gaming &amp; Đồ họa"
+                android:textColor="#172033"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="35.900.000 VNĐ"
+                android:textColor="#625DE8"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CPU: AMD Ryzen 7 7700"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GPU: RTX 4070 12GB"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RAM: 32GB DDR5"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SSD: NVMe 1TB"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <Button
+                android:id="@+id/btnDetailPerformance"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Xem chi tiết cấu hình"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#625DE8"
+                android:layout_marginTop="18dp"/>
+        </LinearLayout>
+
+        <!-- BACK BUTTON -->
+        <Button
+            android:id="@+id/btnBackSuggestion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="← Quay lại ngân sách"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

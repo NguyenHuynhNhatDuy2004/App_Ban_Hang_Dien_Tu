@@ -93,6 +93,31 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
+        <!-- BUILD QUEST -->
+        <activity
+            android:name=".buildquest.BuildQuestActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".buildquest.BuildBudgetActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".buildquest.BuildSuggestionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".buildquest.BuildDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".buildquest.ChangeComponentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".buildquest.CompatibilityActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thay đổi linh kiện"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#172033"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn card đồ họa phù hợp"
+            android:textSize="15sp"
+            android:textColor="#858BA0"
+            android:layout_marginTop="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgGPU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <RadioButton
+                android:id="@+id/rbGPU1"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="GTX 1650 4GB&#10;3.500.000 VNĐ"
+                android:textSize="16sp"
+                android:padding="15dp"
+                android:background="@drawable/bg_build_option"
+                android:layout_marginBottom="12dp"/>
+
+            <RadioButton
+                android:id="@+id/rbGPU2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="RTX 4060 8GB&#10;8.500.000 VNĐ"
+                android:textSize="16sp"
+                android:checked="true"
+                android:padding="15dp"
+                android:background="@drawable/bg_build_option"
+                android:layout_marginBottom="12dp"/>
+
+            <RadioButton
+                android:id="@+id/rbGPU3"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="RTX 4070 12GB&#10;15.000.000 VNĐ"
+                android:textSize="16sp"
+                android:padding="15dp"
+                android:background="@drawable/bg_build_option"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnConfirmComponent"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Xác nhận thay linh kiện"
+            android:textAllCaps="false"
+            android:backgroundTint="#625DE8"
+            android:layout_marginTop="28dp"/>
+
+        <Button
+            android:id="@+id/btnBackComponent"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Quay lại"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</ScrollView>

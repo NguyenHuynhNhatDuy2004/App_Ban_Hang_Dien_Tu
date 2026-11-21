@@ -12,6 +12,8 @@ import com.example.appbanhangdientu.data.MockData
 import com.example.appbanhangdientu.databinding.ActivityMainBinding
 import com.example.appbanhangdientu.model.Product
 
+import com.example.appbanhangdientu.buildquest.BuildQuestActivity
+
 class MainActivity : BaseActivity() {
     private lateinit var binding: ActivityMainBinding
     private var allProducts: List<Product> = MockData.products
@@ -63,6 +65,13 @@ class MainActivity : BaseActivity() {
         binding.profileNav.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
+
+        binding.btnBuildQuest.setOnClickListener {
+            startActivity(
+                Intent(this, BuildQuestActivity::class.java)
+            )
+        }
+
     }
 
     private fun initSearch() {

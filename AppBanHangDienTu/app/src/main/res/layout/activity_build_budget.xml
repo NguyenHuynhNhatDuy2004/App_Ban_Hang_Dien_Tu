@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngân sách của bạn"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#172033"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BƯỚC 2 / 3"
+            android:textSize="13sp"
+            android:textColor="#625DE8"
+            android:layout_marginTop="8dp"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:max="3"
+            android:progress="2"
+            android:progressTint="#625DE8"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Budget Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_build_option">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngân sách dự kiến"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#172033"/>
+
+            <TextView
+                android:id="@+id/txtBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20.000.000 VNĐ"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#625DE8"
+                android:gravity="center"
+                android:layout_marginTop="22dp"/>
+
+            <SeekBar
+                android:id="@+id/seekBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="95"
+                android:progress="15"
+                android:progressTint="#625DE8"
+                android:thumbTint="#625DE8"
+                android:layout_marginTop="18dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="5 triệu"
+                    android:textColor="#858BA0"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100 triệu"
+                    android:textColor="#858BA0"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Existing Components -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã có linh kiện nào?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#172033"
+            android:layout_marginTop="26dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn các thiết bị bạn đã sở hữu"
+            android:textColor="#858BA0"
+            android:layout_marginTop="6dp"/>
+
+        <CheckBox
+            android:id="@+id/checkMonitor"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Màn hình"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"/>
+
+        <CheckBox
+            android:id="@+id/checkKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Bàn phím"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/checkMouse"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Chuột"
+            android:textSize="16sp"/>
+
+        <!-- Priority -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ưu tiên của bạn"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#172033"
+            android:layout_marginTop="24dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgPriority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <RadioButton
+                android:id="@+id/rbPerformance"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Hiệu năng tối đa"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:background="@drawable/bg_build_option"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rbBalanced"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Cân bằng hiệu năng và giá"
+                android:textSize="16sp"
+                android:checked="true"
+                android:padding="10dp"
+                android:background="@drawable/bg_build_option"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rbSaving"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Tiết kiệm chi phí"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:background="@drawable/bg_build_option"/>
+        </RadioGroup>
+
+        <!-- Actions -->
+        <Button
+            android:id="@+id/btnNextBudget"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Xem cấu hình đề xuất →"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#625DE8"
+            android:layout_marginTop="28dp"/>
+
+        <Button
+            android:id="@+id/btnBackBudget"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Quay lại"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
