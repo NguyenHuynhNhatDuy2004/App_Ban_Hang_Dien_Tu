@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F6F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Build Quest"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#172033"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_build_banner">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PC CỦA BẠN, THEO CÁCH BẠN"
+                android:textColor="#C7CBFF"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xây cấu hình PC"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đúng nhu cầu &amp; ngân sách"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trợ lý AI và kiểm tra tương thích"
+                android:textColor="#D6D8FF"
+                android:textSize="12sp"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bạn muốn dùng PC để làm gì?"
+            android:textColor="#172033"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgPurpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbGaming"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="🎮  Chơi game"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:background="@drawable/bg_build_option"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rbDesign"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="🎨  Đồ họa &amp; sáng tạo"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:background="@drawable/bg_build_option"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rbOffice"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="💻  Học tập &amp; văn phòng"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:background="@drawable/bg_build_option"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rbGeneral"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="⚡  Đa dụng"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:background="@drawable/bg_build_option"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnStartBuild"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Bắt đầu xây cấu hình"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:backgroundTint="#5B57E8"
+            android:layout_marginTop="28dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Miễn phí · Dễ dàng · Có kiểm tra tương thích"
+            android:textColor="#858BA0"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
